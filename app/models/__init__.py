@@ -18,3 +18,5 @@ class User(db.Model):
             "email": self.email,
             "created_at": self.created_at.isoformat()
         }
+from app.models.user import User
+__all__ = ['User']
